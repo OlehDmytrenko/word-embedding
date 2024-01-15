@@ -1,0 +1,30 @@
+{
+  "name": "word-embedding",
+  "version": "1.0.0",
+  "description": "Word Embedding as @molfar service",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node ./build/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdc-molfar/word-embedding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wdc-molfar/word-embedding/issues"
+  },
+  "homepage": "https://github.com/wdc-molfar/word-embedding#readme",
+  "dependencies": {
+    "@molfar/py-bridge": "github:wdc-molfar/py-bridge",
+    "@molfar/service-chassis": "github:wdc-molfar/service-chassis",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "execa": "^4.1.0",
+    "fs-extra": "^10.1.0"
+  }
+}
