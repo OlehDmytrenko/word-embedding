@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore", message=r"\[W033\]", category=UserWarning)
 
 input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
 
-client = OpenAI(api_key="open-api-key")
+client = OpenAI(api_key="openai-api-key") # need to create secret OpenAI API key
 
 def main(input_json):
     text = input_json["text"].replace("\n", " ")
